@@ -1,0 +1,246 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #2b3e50;
+    color: #e0e0e0;
+    line-height: 1.6;
+}
+/*
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}*/
+
+.container {
+    max-width: 70%; /* Set the container width to 60% of the screen */
+    margin: 0; /* Remove auto-centering */
+    padding: 20px;
+    left: 0; /* Align the container to the left of the screen */
+    position: relative;
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #f0f8ff;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #f0f8ff;
+    border-bottom: 2px solid #1abc9c;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left Section (Videos) */
+.left-section {
+    width: 49%;
+    background-color: #3a506b;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container {
+    background-color: #2e4057;
+   padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 95px;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* CFD Simulation Buttons */
+.cfd-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.cfd-button {
+    background-color: #34495e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cfd-button:hover {
+    background-color: #16a085;
+}
+
+.cfd-button.active {
+    background-color: #1abc9c;
+    color: #fff;
+    border: 2px solid #16a085;
+    box-shadow: 0 0 5px rgba(26, 188, 156, 0.4);
+}
+
+/* Right Section (Text) */
+.right-section {
+    width: 49%;
+    background-color: #3a506b;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section p, .specifications-section p, .planform-section p {
+    background-color: #445878;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Specifications Section */
+.specifications-section .spec-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.specifications-section p, .planform-section p {
+    font-size: 18px;
+}
+
+.specifications-section p sub {
+    font-size: 12px;
+}
+
+/* Updated Specification Bricks for Uniform Width and Shadows */
+.spec-row p {
+    width: 48%;
+    background-color: #556b87;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adding shadow */
+}
+
+.spec-row p:hover {
+    background-color: #3a506b; /* Slight hover effect */
+}
+/* Planform and Geometry Table */
+.planform-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.planform-table th, .planform-table td {
+    padding: 12px;
+    text-align: center;
+    background-color: #556b87;
+    color: #f0f8ff;
+    border: 2px solid #d7d7d7;
+   /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  Adding shadow */
+}
+
+.planform-table th {
+    background-color: #1abc9c; /* Different color for headers */
+    color: #fff;
+}
+
+.planform-table td {
+    background-color: #445878; /* Cell color */
+}
+
+/* Responsive Table Design */
+@media (max-width: 768px) {
+    .planform-table, .planform-table th, .planform-table td {
+        font-size: 14px;
+    }
+}
+
+.horizontal-line {
+    width: 100%; /* Adjust to the required length, e.g., 80% */
+    border-top: 2px solid #273243; /* Customize thickness and color */
+    margin: 20px 0; /* Adds space above and below the line */
+}
+
+/* Right Ladder Section (Achievements, Experience, Software) */
+.right-ladder-container {
+    width: 30%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /*height: 100vh;*/
+    background-color: #273243;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.ladder-section {
+    margin-bottom: 40px;
+}
+
+.ladder-section h2 {
+    font-size: 20px;
+    color: #f0f8ff;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #1abc9c;
+}
+
+.ladder-section ul {
+    list-style: disc;
+    padding-left: 25px;
+}
+
+.ladder-section ul li {
+   
+    font-size: 16px;
+    color: #fff;
+}
+
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: none; /* Ensure there's no underline */
+}
+
+.profile-section h2 {
+    font-size: 22px;
+    color: #f0f8ff;
+    margin-right: 15px;
+    border-bottom: none; /* Remove underline */
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #1abc9c;
+    margin-left: 90px; /* Adjust this value to control the left spacing */
+    
+}
+
+

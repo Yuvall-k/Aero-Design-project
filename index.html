@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RC Aircrafts Designed</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="vertical-line"></div>
+    
+    <div class="container">
+        <header>
+            <h1 style="margin: 50px 0 0 0;">  RC Aircraft Designed</h1>
+        </header>
+
+        <div class="horizontal-line"></div> 
+
+        <div class="content">
+            <!-- Left Side: Video Sections -->
+            <div class="left-section">
+                <!-- Blender Video -->
+                <div class="video-section">
+                    <h2>Aquarius</h2>
+                    <div class="video-container">
+                        <video autoplay loop muted>
+                            <source src="1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- CFD Simulation with buttons for different videos -->
+                <div class="cfd-section">
+                    <h2>CFD Simulation</h2>
+                    <div class="cfd-buttons">
+                        <button class="cfd-button active" data-video="full_body_analysis">Full Body Analysis</button>
+                        <button class="cfd-button" data-video="stall_analysis">Stall Analysis</button>
+                        <button class="cfd-button" data-video="wingtip_cfd">Wing Tip Vortex</button>
+                    </div>
+                    <div class="video-container">
+                        <video id="cfd-video" autoplay loop muted>
+                            <source src="full_body_analysis.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Flight Test Video -->
+                <div class="flight-test-section">
+                    <h2>Flight Test</h2>
+                    <div class="video-container">
+                        <video autoplay loop muted>
+                            <source src="flight_test.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Text Sections -->
+            <div class="right-section">
+                <!-- About Section -->
+                <div class="about-section">
+                    <h2>About</h2>
+                    <p>Aquarius, a single motor propelled, mid-wing aircraft with tricycle landing gear designed to compete in <b>SAE Aero Design East 2023.</b>
+                         In compliance with our mission statement, we have fabricated a system capable of combating wildfires by safely and autonomously 
+                         carrying water and components for a Ground Transport Vehicle (GTV) via a Powered Autonomous Delivery Aircraft (PADA).<br><br>
+                         The primary aircraft boasts an aerodynamic fuselage and a semi-tapered wing planform with split end wing tips.Its structure is
+                          reinforced from advanced materials such as Carbon Fiber (CF), Fiberglass (FG) and Nomex Honeycomb Core (HC).</p>
+                </div>
+
+                <!-- Specifications Section -->
+                <div class="specifications-section">
+                    <h2>Aircraft Specifications</h2>
+                    <div class="spec-row">
+                        <p>Lift : 180 N</p>
+                        <p>Drag : 22 N</p>
+                    </div>
+                    <div class="spec-row">
+                        <p>Cl / Cd<sub> cruise</sub> : 8.18</p>
+                        <p>Cl<sub>max</sub>: 2.08</p>
+                    </div>
+                    <div class="spec-row">
+                        <p>V<sub>cruise</sub> : 13 m/s</p>
+                        <p>V<sub>stall</sub> : 9.6 m/s</p>
+                    </div>
+                    <div class="spec-row">
+                        <p>Payload : 5 litre</p>
+                        <p>Weight : 12.5 Kg</p>
+                    </div>
+                </div>
+
+                <!-- Planform and Geometry Section -->
+                
+<div class="planform-section">
+    <h2>Geometric Overview</h2>
+    
+    <table class="planform-table">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Fuselage</th>
+                <th>Wing</th>
+                <th>Tail</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Airfoil</td>
+                <td>GOE382</td>
+                <td>E423</td>
+                <td>NACA 0012</td>
+            </tr>
+            <tr>
+                <td>AoA (*)</td>
+                <td>1</td>
+                <td>4</td>
+                <td>-2</td>
+            </tr>
+            <tr>
+                <td>Span (m)</td>
+                <td>0.3</td>
+                <td>2.6</td>
+                <td>1.1</td>
+            </tr>
+            <tr>
+                <td>MAC (m)</td>
+                <td>0.9</td>
+                <td>0.56</td>
+                <td>0.34</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+            </div>
+        </div>
+    </div>
+
+
+<!-- Right Background Container -->
+<div class="right-ladder-container">
+
+    <div style="display: flex; align-items: center; position: relative;">
+        <!-- Name and Email Section -->
+        <div style="margin-right: 10px;">
+          <h1 style="margin: 50px 0 0 0;">Yuvall Kamani</h1>
+          <p style="font-size: 0.8em; margin: 0 0 70px 12px;">( yuvall.kamani2021@vitstudent.ac.in )</p>
+        </div>
+        
+        <!-- Profile Picture -->
+        <img src="profile_pic.jpg" alt="Profile_Picture" style="width: 130px; border-radius: 50%; position: absolute; right: 10px; top:10px">
+    </div>
+
+    <div class="ladder-section">
+        <h2>Achievement [ SAE Aero Design East ]</h2>
+        <ul>
+            <li>Design Report World Wide 3rd</li>
+            <li>Asia Specific 1st </li>
+           
+        </ul>
+    </div>
+
+    <div class="ladder-section">
+        <h2>Experience Gained [ 2 years ] </h2>
+        <ul>
+            <li>Integrated advanced aerodynamics with real-world 
+                testing and validation.</li>
+            <li>Conducted CFD analysis for evaluating
+                aerodynamic efficiency and design validation.</li>    
+            <li>Performed CAD modeling and structural analysis 
+                for optimal UAV design.</li>
+            <li>In-house manufacturing of carbon fiber and glass
+                 fiber composites for RC aircraft.</li>
+            <li>Integrated 3D printing for prototyping and component
+                 testing.</li>     
+        </ul>
+    </div>
+
+    <div class="ladder-section">
+        <h2>Software Learned</h2>
+        <ul>
+            <li>siemens star ccm+ </li>
+            <li>Ansys Fluent </li>
+            <li>Xflr 5  &nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;(airfoil analysis, aircraft stability analysis)</li>
+            <li>Solidworks </li>
+            <li>Fusion 360 </li>
+            <li>Aeroelasticity</li>
+        </ul>
+    </div>
+</div>    
+
+    <script src="script.js"></script>
+</body>
+</html>
